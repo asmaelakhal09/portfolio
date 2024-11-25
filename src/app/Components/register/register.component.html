@@ -1,0 +1,20 @@
+<div class="context">
+  <div class="content">
+    <i class="fa-solid fa-user"></i>
+    <div class="inputs">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="email" >
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput [(ngModel)]="password">
+      </mat-form-field  > 
+      <button mat-flat-button (click)="register()">register</button>
+
+    </div>
+
+    <i class="fa-brands fa-google"></i>
+  </div>
+</div>

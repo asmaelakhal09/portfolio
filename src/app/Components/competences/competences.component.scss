@@ -1,0 +1,183 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.context {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.context .title {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 45px 0px;
+    border-bottom: 10px solid rgb(95, 95, 184);
+    color: #000000;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+
+.context .content {
+
+    width: 90%;
+    height: 72%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.context .content  .cpt {
+
+    width: 47%;
+    padding: 20px;
+    height: 47%;
+    border: 2px solid rgba(128, 128, 128, 0.418);
+}
+
+
+
+.context .content .cpt .cpt-title {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 25px 0px;
+    border-bottom: 2px solid rgb(139, 141, 146);
+    margin-bottom: 25px;
+}
+
+
+.context .content .cpt .cpt-text {
+
+    padding: 15px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+
+
+}
+
+.context .content .cpt .images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+    
+}
+
+.context .content .cpt .images img {
+    width: 120px;
+}
+
+
+
+
+
+/*Media Query */
+
+@media only screen and (max-width: 600px) {
+
+    .context {
+
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        width: 100%;
+        
+    }
+    
+
+    .context .title {
+        font-size: 30px;
+    }
+
+    .context .content {
+
+        width: 90%;
+        height: 72%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    
+    
+    
+    
+    .context .content  .cpt {
+    
+        width: 90%;
+        padding: 20px;
+        height: 47%;
+        border: 2px solid rgba(128, 128, 128, 0.418);
+        margin-bottom: 100px;
+    }
+    .context .content .cpt .cpt-title {
+        font-size: 25px;
+        font-weight: bold;
+        padding: 25px 0px;
+        border-bottom: 2px solid rgb(139, 141, 146);
+        margin-bottom: 25px;
+    }
+    
+    
+    .context .content .cpt .cpt-text {
+    
+        padding: 15px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25%;
+    
+    
+    }
+    
+    .context .content .cpt .images {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40%;
+        
+    }
+    
+    .context .content .cpt .images img {
+        width: 80px;
+    }
+    .context .content .cpt:first-child .images img {
+        width: 70px !important; /* Adjust this value as needed */
+    }
+    .context .content .cpt:nth-child(2) .images img {
+        width: 80px !important; /* Adjust this value as needed */
+    }
+    .context .content .cpt:nth-child(3) .images img {
+        width: 80px !important; /* Adjust this value as needed */
+    }
+
+    .context .content .cpt:nth-child(2) .images img:nth-child(3) {
+        width: 50px !important; /* Adjust this value as needed */
+    }
+    
+    .context .content .cpt:nth-child(3) .images img:nth-child(1) {
+        width: 50px !important; /* Adjust this value as needed */
+    }
+    
+    
+
+}

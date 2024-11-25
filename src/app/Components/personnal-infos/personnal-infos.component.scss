@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+.context img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+
+.context .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 90%;
+}
+
+
+.context .infos .info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 20px;
+    background-color: white;
+}
+
+.context .infos .info :nth-child(1) {
+    margin-right: 30px;
+    font-weight: bold;
+    width: 200px;
+}
+
+

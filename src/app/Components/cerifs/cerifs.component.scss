@@ -1,0 +1,126 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.context {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.context .title {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 45px 0px;
+    border-bottom: 10px solid rgb(95, 95, 184);
+    color: #000000;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+
+.context .certifs {
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
+
+
+.context .certifs .certif {
+
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(128, 128, 128, 0.582);
+}
+
+
+.context .certifs .certif .certif-title{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+    border-bottom: 2px slid gray;
+    display: flex;
+    align-items: center;
+}
+
+
+.context .certifs .certif .certif-title ion-icon{
+    
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+
+.context .certifs .certif .certif-text {
+
+    line-height: 35px;
+    
+}
+
+
+
+
+
+/*Media Query */
+
+@media only screen and (max-width: 600px) {
+
+
+    .context {
+
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        width: 100%;
+        
+    }
+    
+
+    .context .title {
+        font-size: 30px;
+    }
+
+    .context .certifs .certif .certif-title{
+        font-size: 25px;
+        font-weight: bold;
+        padding: 15px;
+        border-bottom: 2px slid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .context .certifs .certif .certif-title ion-icon{
+        
+        font-size: 30px;
+        margin-right: 15px;
+    }
+    
+    
+    .context .certifs .certif .certif-text {
+    
+        line-height: 35px;
+        font-size: 14px;
+        text-align: justify;
+        width: 100%;
+    }
+    
+    .context .certifs .certif {
+        padding: 15px 20px;
+    }
+    
+
+}

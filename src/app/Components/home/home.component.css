@@ -1,0 +1,202 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+*:not(i) {
+    font-family: "Barlow", sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../../../assets/imgs/bg_home.jpg');
+    background-size: cover;
+}
+
+app-navbar {
+    position: absolute;
+    top: 0px;
+}
+.context::before {
+    content: '';
+    width: 700px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.164);
+    right: 0px;
+    transform: rotate(30deg);
+}
+
+.context .content {
+    height: 50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  
+}
+
+.context .content .title {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 25px 0px;
+  
+}
+
+.context .content  p {
+    width: 70%;
+    line-height: 30px;
+    margin-left: 25px;
+    margin-top: 80px;
+    text-align: left;
+    
+}
+
+.context .content span {
+    display: block;
+    margin-top: 20px;
+    width: 75%;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.context .content .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    margin-top: 30px;
+
+}
+.context .content .icons i {
+    font-size: 30px;
+}
+
+
+
+
+
+.context .content button {
+    margin-top: 25px;
+    padding: 15px 0px;
+    width: 200px;
+    
+}
+.context .profile {
+    z-index: 1;
+    height: 48%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+
+
+
+
+
+.context .profile .image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 15px 0px;
+    background-image: url('../../../assets/imgs/asmae.jpeg');
+    background-size: cover;
+    border: 4px solid white;
+}
+
+
+.context .profile span {
+    display: block;
+    margin: 15px 0px;
+    font-size: 30px;
+    font-synthesis: bold;
+}
+
+.context .profile .description {
+    margin: 25px 0px;
+    line-height: 32px;
+    font-size: 16px;
+} 
+
+.context .profile button {
+    margin-top: 45px;
+    padding: 15px 0px;
+    width: 200px;
+    font-size: 16px;
+}
+
+
+
+/*Media Query */
+
+@media only screen and (max-width: 600px) {
+
+    .context  {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-image: url('../../../assets/imgs/bg_home.jpg');
+        background-size: contain;
+    }
+
+    .context .content {
+
+        width: 100%;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid gray ;
+    }
+
+    .context .content .title {
+
+        font-size: 40px;
+        line-height: 55px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .context .profile {
+
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .context .profile .image {
+        width: 250px;
+        height: 250px;
+    }
+    .context .profile span {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .context .profile .description {
+        padding: 15px;
+        text-align: left;
+        font-size: 14px;
+        margin: 0px;
+    }
+
+
+    .context .profile button {
+        margin: 5px;
+        
+    }
+
+
+    }

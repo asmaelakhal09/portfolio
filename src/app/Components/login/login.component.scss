@@ -1,0 +1,55 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.context {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+
+.context .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    width: 30%;
+}
+
+
+.context .content .inputs {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    width: 100%;
+}
+
+.context .content .inputs button {
+    padding: 15px 0px;
+    background-color: rgb(75, 87, 143);
+    color: white;
+}
+
+.context .content .fa-user {
+    font-size: 140px;
+    margin-bottom: 15px;
+    color: rgb(75, 87, 143);
+}
+
+.context .content i {
+    cursor: pointer;
+}

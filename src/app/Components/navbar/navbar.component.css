@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav {
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 99%;
+    padding: 20px;
+}
+
+.leave {
+    background-color: rgba(255, 255, 255, 0);
+}
+.enter {
+    background-color:white;
+}
+.logo {
+    position: relative;
+    left: 200px;
+}
+.nav .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.nav .links {
+    display: flex;
+    flex-grow: 0.3;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 200px;
+}
+
+
+
+.nav .links span {
+    padding: 8px 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.links span:hover {
+    color: blue;
+}
+
+.toDown {
+    transform: rotate(180deg);
+    transition: .3s;
+}
+
+
+.links button {
+    width: 170px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.links button:hover {
+
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+
+
+.line {
+    position: absolute;
+    left: -15px;
+    bottom: -10px;
+    width: 140px;
+    height: 10px;
+    background: #6b6396;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+
+
+
+.toAccueil {
+    position: absolute;
+    left: -15px;
+    transition: .3s;
+}
+
+.toFormation {
+    position: absolute;
+    left: 100px;
+    transition: .3s;
+}
+
+.toExperience {
+    position: absolute;
+    left: 227px;
+    transition: .3s;
+}
+
+.toCompetences {
+    position: absolute;
+    left: 369px;
+    transition: .3s;
+}
+
+.toCertifs {
+    position: absolute;
+    left: 511px;
+    transition: .3s;
+}
+.toContact {
+    position: absolute;
+    left: 630px;
+    transition: .3s;
+}
+
+
+
+/*Media Query */
+
+@media only screen and (max-width: 600px) {
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        
+    }
+   
+    .nav .links {
+
+       
+        left: 0px;
+        font-size: 14px;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line { 
+        height: 0px;
+
+    }
+}

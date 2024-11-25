@@ -1,0 +1,505 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.formation {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+.formation .title {
+    font-size: 30px;
+    background-color: black;
+    width: 20%;
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto  ;
+    margin-top: 30px;
+}
+
+
+
+.formation .content {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 100%;
+}
+
+.formation .content .data {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 45%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.formation .content .data .section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    background-color:white;
+    padding: 20px 15px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 14px 0px ;
+}
+
+.formation .content .data .section img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.formation .content .data .section .text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: 10px;
+    width: 100%;
+    padding: 15px;
+}
+
+.formation .content .data .section .text-title {
+   font-size: 20px;
+   font-weight: bold; 
+   margin: 10px 0px;
+}
+
+.formation .content .data .section .text-details {
+
+    margin: 10px 0px;
+
+    
+}
+
+.formation .content .data .section .text .date{
+    margin: 10px 0px;
+    color: rgb(99, 98, 98);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+
+}
+
+.formation .content .data .section button {
+
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.formation .content .data .section button:hover  {
+
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    transition: .3s;
+
+}
+
+
+
+.formation .content .image {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    position: relative;
+    left: 100px;
+    height: 100%;
+}
+
+
+.formation .content .image img {
+
+    width: 700px;
+}
+
+
+
+// experience
+
+
+.experience {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.experience .title {
+
+    font-size: 30px;
+    background-color: black;
+    width: 28%;
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto    
+}
+.experience .projects {
+
+    padding: 25px;
+    margin: 20px;
+    z-index: -2;
+}
+
+
+.experience .projects .projects-icon {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.experience .projects .projects-icon ion-icon {
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+.experience .projects .project-items {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.experience .projects .project-items .project-item{
+    
+    border :2px dashed black;
+    width: 30%;
+    display: flex;
+    padding: 30px 35px;
+    flex-direction: column;
+    margin: 30px 0px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    z-index: 2;
+}
+
+.experience .projects .project-items .project-item .bg1 {
+
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgb(86, 179, 116);
+    border-radius: 50%;
+    z-index:-1;
+}
+
+.experience .projects .project-items .project-item .project-title{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+
+.experience .projects .project-items .project-item .data  .text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.experience .projects .project-items .project-item .data .technologies{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.experience .projects .project-items .project-item .data .technologies span{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.experience .projects .project-items .project-item .data .technologies .images{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.experience .projects .project-items .project-item .data .technologies .images img{
+    
+    width: 70px;
+    height: 70px;
+}
+
+.experience .projects .project-items .project-item .data .date {
+    display: flex;
+    align-items: center;
+}
+
+
+.experience .projects .project-items .project-item .data .date ion-icon {
+    
+    font-size: 30px;
+    margin-right: 15px;
+    
+    
+    
+}
+
+
+
+
+.stages .stage-icon {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.experience .stages .stage-icon ion-icon {
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+
+
+.experience .stages .stage-items .stage-details{
+    display: flex;
+    padding: 20px;
+}
+
+
+.experience .stages .stage-items .stage-details .stage-title{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.experience .stages .stage-items .stage-details .stage-title i{
+
+    font-size: 30px;
+    margin-right: 15px;
+
+
+}
+
+.experience .stages .stage-items .stage-details .stage-title span{
+
+    font-size: 20px;
+
+
+}
+
+.experience .stages .stage-items .stage-details .stage-info{
+    display: flex;
+    width: 50%;
+
+}
+.experience .stages .stage-items .stage-details .stage-info img{
+
+    width: 70px;
+    height: 70px;
+
+}
+.experience .stages .stage-items .stage-details  .description{
+
+
+    font-weight: bold;
+
+}
+
+mat-panel-description {
+    margin-left: 435px;
+}
+
+
+
+.certificats {
+    margin: 60px 0px;
+}
+
+
+.certificats .certificat-title {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+.certificats .certificat-title span {
+
+    margin-right: 15px;
+}
+
+
+.certificats .certificats-items {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.certificats .certificat-item {
+
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 2px 2px 10px 5px rgb(121, 128, 121);
+    border-radius: 10px;
+    
+}
+
+
+.certificats .certificat-item img {
+    width: 70px;
+    height: 70px;
+}
+
+
+.certificats .certificat-item span {
+    font-size: 18px;
+}
+
+.certificats .certificat-item ion-icon {
+    font-size: 30px;
+}
+
+
+//competences
+
+
+
+.competences .competences-title {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.competences .competences-title i {
+    margin-left: 15px;
+}
+
+
+.competences .web {
+
+    margin-top: 100px;
+}
+
+.competences .web .competences-details {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.competences .web .competences-details .description {
+
+    width: 50%;
+    padding: 20px;
+}
+
+.competences .web .competences-details .info {
+
+    width: 50%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.competences .web .competences-details .info span  {
+
+    width: 300px;
+    height: 30px;
+    background-color: rgb(65, 146, 65);
+    position: relative;
+
+}
+
+
+.competences .web mat-expansion-panel .competences-details:nth-child(2) .info span::before  {
+
+    content: '';
+    width: 10%;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    background-color: rgb(197, 186, 186);
+
+
+}
+.competences .web mat-expansion-panel .competences-details:nth-child(3) .info span::before  {
+
+    content: '';
+    width: 20%;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    background-color: rgb(197, 186, 186);
+
+
+}
+.competences .web mat-expansion-panel .competences-details:nth-child(5) .info span::before  {
+
+    content: '';
+    width: 40%;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    background-color: rgb(197, 186, 186);
+
+
+}
+
+
+
+mat-panel-title i {
+
+    font-size: 25px;
+    margin-left: 15px;
+    color: blue;
+}
+
+
+mat-panel-title img  {
+    width: 70px;
+    height: 70px;
+
+}
+
+mat-expansion-panel-header {
+    padding: 25px;
+    margin: 15px 0px;
+}

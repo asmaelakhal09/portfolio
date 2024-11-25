@@ -1,0 +1,26 @@
+<div class="context" id="Accueil">
+    <app-navbar  (sectionSelected)="scrollToSection($event)"></app-navbar>
+   <div class="content" #title>
+       <div class="title" >Welcome to my Portfolio</div>
+       <p>
+        Ma passion pour le développement web ne se limite pas à la création de sites. Je m'engage à fournir des solutions sur mesure qui répondent aux besoins spécifiques de mes clients. Chaque projet est une occasion pour moi d'innover et de créer une expérience utilisateur fluide et performante.
+       </p>
+       <button mat-flat-button style="font-size: 16px;background: rgb(53, 53, 192);color: white" >Découvrire plus</button>
+       <span>contact me : </span>
+       <div class="icons">
+       <i class="fa-solid fa-envelope" (click)="openDialog()"></i>
+       <i class="fa-solid fa-phone"></i>
+       <i class="fa-brands fa-linkedin"></i>
+       <i class="fa-brands fa-github"></i>
+       </div>
+   </div>
+   <div class="profile" #myElement>
+       <p class="image"></p>
+   
+   </div>
+</div>
+<app-formation id="Formation"></app-formation>
+<app-experience id="Experience"></app-experience>
+<app-competences id="Competences"></app-competences>
+<app-cerifs id="Certifs"></app-cerifs>
+<app-contact id="Contact"></app-contact>
